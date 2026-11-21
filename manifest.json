@@ -1,11 +1,9 @@
 {
-  "name": "Daily Life Hub",
-  "short_name": "Life Hub",
-  "description": "Plan your day, manage money, organize shopping and save notes.",
+  "name": "LifeSphere \u2014 Your Everyday Life, Connected.",
+  "short_name": "LifeSphere",
   "start_url": "./",
-  "scope": "./",
   "display": "standalone",
-  "background_color": "#f5f3fa",
-  "theme_color": "#39256f",
-  "icons": []
+  "background_color": "#f4f8fd",
+  "theme_color": "#1769d2",
+  "description": "Plan your day, manage your money, organize shopping and save notes."
 }
