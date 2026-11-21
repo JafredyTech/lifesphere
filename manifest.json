@@ -1,0 +1,11 @@
+{
+  "name": "Daily Life Hub",
+  "short_name": "Life Hub",
+  "description": "Plan your day, manage money, organize shopping and save notes.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f3fa",
+  "theme_color": "#39256f",
+  "icons": []
+}
