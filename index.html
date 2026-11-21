@@ -4,6 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#1769d2">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="LifeSphere">
+  <link rel="manifest" href="./manifest.json">
+  <link rel="apple-touch-icon" href="./icons/icon-192.png">
   <title>LifeSphere — Your Everyday Life, Connected</title>
   <style>
     :root{--blue:#1769d2;--blue-dark:#1054ad;--pale:#eaf3ff;--ink:#18304d;--muted:#64748b;--line:#dce6f2;--bg:#f5f9ff;--white:#fff;--red:#b42318;--green:#067647}
@@ -313,6 +318,14 @@
   supabase.auth.onAuthStateChange((_event,newSession)=>{
     setTimeout(()=>showSession(newSession),0);
   });
+</script>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./service-worker.js')
+        .catch((error) => console.warn('Service worker registration failed:', error));
+    });
+  }
 </script>
 </body>
 </html>
